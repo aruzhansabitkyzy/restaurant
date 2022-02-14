@@ -78,7 +78,7 @@ class FoodInfo
 //        return "Updated";
 //    }
 
-    public function get_foods_by_id($food_id)
+    public function get_foods_by_id($food_id): array
     {
         global $connection;
         $query = mysqli_query($connection, "SELECT * FROM menu WHERE food_id = '$food_id'");
